@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+  </head>
+  <body>
+
+
+      <div class="container">
+        <div class="row">
+          <% @flats.each do |flat| %>
+          <div class="col">
+
+            <div class="cards" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('');">
+
+                <p id='name'><%= flat.name %></p>
+                <p id='address'><%= flat.address %></p>
+                <p id='description'><%= flat.description %></p>
+                <p id='price_per_night'><%= flat.price_per_night %></p>
+                <p id='number_of_guests'><%= flat.number_of_guests %></p>
+
+            </div>
+
+          </div>
+          <% end %>
+        </div>
+      </div>
+
+
+  </body>
+</html>
+
+
